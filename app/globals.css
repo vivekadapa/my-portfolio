@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+[data-theme="dark"] body {
+  background-color: #18181b;
+  color: #fff;
+}
+
+*{
+  scroll-behavior: smooth;
+  scroll-margin-top: 8rem;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
