@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="flex flex-col gap-3 my-2">
                 <h1 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">Want to hire me for a job?</h1>
                 <p className="text-xl">Drop a message here</p>
-                <a href="https://wa.me/917680808622/?text=I%20have%20a%20job%20for%20you" className="bg-[#4ade80] w-fit flex gap-2 font-semibold rounded-lg px-4 py-2"> <IconBrandWhatsapp />Whatsapp</a>
+                <a href="https://wa.me/917680808622/?text=Hello%20%2C%20I%20have%20seen%20your%20portfolio%2C%20would%20like%20to%20talk%20with%20you" className="bg-[#4ade80] w-fit flex gap-2 font-semibold rounded-lg px-4 py-2"> <IconBrandWhatsapp />Whatsapp</a>
             </div>
             <hr />
             <div className="flex flex-col mt-4 gap-4">
