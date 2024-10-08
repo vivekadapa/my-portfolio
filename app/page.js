@@ -2,8 +2,9 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-w-[329px]">
       <Hero />
     </div>
+
   );
 }

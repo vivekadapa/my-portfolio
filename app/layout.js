@@ -23,14 +23,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   // const [theme, setTheme] = useState("dark")
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <div className="flex flex-col justify-center items-center">
+          <div className="">
             <TopNav />
-            {/* <NavbarDemo className={""} /> */}
             {children}
           </div>
 

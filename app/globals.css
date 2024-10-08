@@ -16,8 +16,36 @@ body {
 
 *{
   scroll-behavior: smooth;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 12rem;
 }
+
+
+@media screen and (max-width: 992px) {
+  html{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+/* @media screen and (max-width: 486px) {
+  .top-nav{
+    font-size: 14px;
+  }
+  html{
+    padding-inline: 1rem;
+  }
+} */
+
+/* @media screen and (max-width: 470px) {
+  html{
+    font-size: 13px;
+  }
+} */
 
 @layer base {
   :root {

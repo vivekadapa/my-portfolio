@@ -36,28 +36,28 @@ const Skills = () => {
 
     return (
         <div className="mt-4 text-xl italic flex flex-col gap-4">
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {
                     languages.map((s, index) => {
                         return <Tech title={s} key={index} />
                     })
                 }
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {
                     libraries.map((s, index) => {
                         return <Tech title={s} key={index} />
                     })
                 }
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {
                     databases.map((s, index) => {
                         return <Tech title={s} key={index} />
                     })
                 }
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
                 {
                     tools.map((s, index) => {
                         return <Tech title={s} key={index} />
