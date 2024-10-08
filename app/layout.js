@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import NavbarDemo from "@/components/Navbar";
 import Providers from "./providers";
 import TopNav from "@/components/TopNav";
 

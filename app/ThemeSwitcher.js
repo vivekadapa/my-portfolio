@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 const ThemeSwitcher = () => {
 
     const [mounted, setMounted] = useState(false)
@@ -31,9 +32,9 @@ const ThemeSwitcher = () => {
             <button className={`bg-transparent transition px-3 py-1 border-[1px] rounded-full`}>
                 {
                     theme === "light" ? (
-                        <img src='./dark-icon.svg' className="w-6 h-6" />
+                        <Image width={10} height={10} src='/dark-icon.svg' alt="dark-icon" className="w-6 h-6" />
                     ) : (
-                        <img src='./light-icon.svg' className="w-6 h-6 " />
+                        <Image width={10} height={10} src='/light-icon.svg' alt="light-icon" className="w-6 h-6 " />
                     )
                 }
             </button>

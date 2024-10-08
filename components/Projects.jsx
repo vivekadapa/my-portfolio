@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import Link from 'next/link';
 
 
 const projects = [
@@ -10,7 +9,7 @@ const projects = [
         techStack: ["Full-stack", "React", "Tailwind", "Material UI", "Nodejs", "MongoDB", "Redis", "Docker"],
         liveLink: "https://medicare-project-seven.vercel.app/",
         codeLink: "https://github.com/vivekadapa/mEDICARE-v2",
-        logo: "./medicare-logo.png",
+        logo: "/medicare-logo.svg",
     },
     {
         title: "Easetasks",
@@ -18,7 +17,7 @@ const projects = [
         techStack: ["Full-stack", "React", "Typescript", "Shadcn", "Prisma", "MongoDB", "Nodejs"],
         liveLink: "https://easetasks.vercel.app/",
         codeLink: "https://github.com/vivekadapa/easetasks",
-        logo: "./easetasks.svg",
+        logo: "/easetasks.svg",
     },
     {
         title: "Talkies",
@@ -26,7 +25,7 @@ const projects = [
         techStack: ["Full-stack", "React", "Tailwind", "Nodejs", "MongoDB", "Redis"],
         liveLink: "https://talkies-frontend.onrender.com/",
         codeLink: "https://github.com/vivekadapa/talkies",
-        logo: "./talkies-logo.svg",
+        logo: "/talkies-logo.svg",
     },
     {
         title: "Electricity Billing System",
@@ -34,7 +33,7 @@ const projects = [
         techStack: ["Java", "JDBC", "MySQL"],
         liveLink: "",
         codeLink: "https://github.com/vivekadapa/ElectricityBillingSystem",
-        logo:""
+        logo: ""
     }
 ];
 

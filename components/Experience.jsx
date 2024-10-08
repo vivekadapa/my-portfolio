@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
-import { MoveUpRight } from 'lucide-react'
+
 
 const Experience = () => {
     return (

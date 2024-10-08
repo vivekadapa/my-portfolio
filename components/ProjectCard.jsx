@@ -1,6 +1,7 @@
 import { Github, Eye } from 'lucide-react'
 import { SquareTerminal } from 'lucide-react';
 import Tech from './Tech';
+import Image from 'next/image';
 
 const ProjectCard = ({ title, description, techStack, liveLink, codeLink, logo }) => {
     return (
@@ -10,14 +11,14 @@ const ProjectCard = ({ title, description, techStack, liveLink, codeLink, logo }
                     logo === "" ? (
                         <SquareTerminal className="w-10 h-10" />
                     ) : (
-                        <img src={logo} className={`${title === "Medicare"  ? "w-20" : title === "Responsive Web Design" ? "w-1/2 mt-4 p-2 bg-black dark:bg-transparent" : "w-10"}`} alt={`${title} logo`} />
+                        <Image src={logo} width={20} height={20} className={`${title === "Medicare" ? "w-20" : title === "Responsive Web Design" ? "w-1/2 mt-4 p-2 bg-black dark:bg-transparent" : "w-10"}`} alt={`${title} logo`} />
                     )
                 }
                 <h1 className="text-2xl font-bold">{title}</h1>
                 <p>{description}</p>
                 <div className="flex gap-2 flex-wrap dark:text-[#d1d5db] text-gray-700 italic">
                     {techStack.map((tech, index) => (
-                        <Tech title={tech} />
+                        <Tech key={index} title={tech} />
                     ))}
                 </div>
             </div>
