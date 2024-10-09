@@ -23,10 +23,10 @@ const ProjectCard = ({ title, description, techStack, liveLink, codeLink, logo }
                 </div>
             </div>
             <div className="absolute inset-0 flex items-center justify-center space-x-4 transition-all dark:text-[#d1d5db] text-gray-700 duration-200 ease-in bg-[#ffffff] bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 top-[120%] group-hover:top-0">
-                <a href={liveLink} target="_blank" className={`p-2 ${liveLink === "" ? "hidden" : "block"} rounded-lg flex space-x-4 gap-2 dark:border-[1px] border-zinc-400 bg-zinc-50 dark:bg-transparent`}>
+                <a href={liveLink} target="_blank" className={`p-2 ${liveLink === "" ? "hidden" : "block"} rounded-lg flex items-center space-x-4 gap-2 dark:border-[1px] border-zinc-400 bg-zinc-50 dark:bg-transparent`}>
                     <Eye /> Live Link
                 </a>
-                <a href={codeLink} target="_blank" className="p-2 rounded-lg flex space-x-4 gap-2 dark:border-[1px] border-zinc-400 bg-zinc-50 dark:bg-transparent">
+                <a href={codeLink} target="_blank" className="p-2 rounded-lg flex items-center space-x-4 gap-2 dark:border-[1px] border-zinc-400 bg-zinc-50 dark:bg-transparent">
                     <Github /> Code
                 </a>
             </div>
