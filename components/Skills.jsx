@@ -29,7 +29,7 @@ const Skills = () => {
 
     const tools = [
         "Git",
-        "Aws"
+        "Aws",
         "Docker",
         "Linux",
         // "Postman",
