@@ -15,7 +15,7 @@ const Hero = () => {
             <div id="home" className="flex max-[760px]:flex-col-reverse max-[760px]:gap-4  w-full  justify-between">
                 <div className="flex flex-col space-y-4">
                     <h1 className="font-bold text-4xl">Vivek Chaitanya Adapa</h1>
-                    <h3 className="px-4 py-2 rounded-md text-left dark:bg-[#3f3f46] bg-[#f3f4f6] w-fit font-semibold">Full Stack Developer</h3>
+                    <h3 className="px-4 py-2 rounded-md text-left dark:bg-[#3f3f46] bg-[#f3f4f6] w-fit font-semibold">Software Developer</h3>
                     <p className="dark:text-[#71717a] font-medium">Final Year Computer Science Student at <a href="https://www.iiits.ac.in/" className="underline text-teal-300" target="_blank">IIITS</a>  with experience in building Full Stack Applications.</p>
                     <div
                         className="flex max-[347px]:flex-col max-[347px]:space-y-4 max-[347px]:space-x-0 space-x-4">
