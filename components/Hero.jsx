@@ -20,7 +20,7 @@ const Hero = () => {
                     <div
                         className="flex max-[347px]:flex-col max-[347px]:space-y-4 max-[347px]:space-x-0 space-x-4">
                         {/* <a href="mailto:vivekchaitanya1324@gmail.com" className="hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors-transform focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">Send email</a> */}
-                        <a href="/resume.pdf" className="hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out text-center px-8 pt-[0.7rem] pb-2 inset-0 bg-gradient-to-r text-gray-200 from-indigo-500 to-purple-500 rounded-lg" target="_blank">View Resume</a>
+                        <a href="/My_Resume.pdf" className="hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out text-center px-8 pt-[0.7rem] pb-2 inset-0 bg-gradient-to-r text-gray-200 from-indigo-500 to-purple-500 rounded-lg" target="_blank">View Resume</a>
                     </div>
                 </div>
                 <Image width={10} height={10} src="/logo.jpg" className="w-24 h-24 rounded-md" alt="logo" unoptimized />
