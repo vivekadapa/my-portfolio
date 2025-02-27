@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="flex flex-col space-y-4">
                     <h1 className="font-bold text-4xl">Vivek Chaitanya Adapa</h1>
                     <h3 className="px-4 py-2 rounded-md text-left dark:bg-[#3f3f46] bg-[#f3f4f6] w-fit font-semibold">Software Developer</h3>
-                    <p className="dark:text-[#71717a] font-medium">Final Year Computer Science Student at <a href="https://www.iiits.ac.in/" className="underline text-teal-300" target="_blank">IIITS</a>  with experience in building Full Stack Applications.</p>
+                    <p className="dark:text-[#71717a] font-medium">Final year CS <a href="https://www.iiits.ac.in/" className="underline text-teal-300" target="_blank">@IIITS</a>, Full Stack Engineer Intern <a href="https://www.freshprints.com/" className="underline text-[#396ce8]" target="_blank">@Fresh Prints</a>.</p>
                     <div
                         className="flex max-[347px]:flex-col max-[347px]:space-y-4 max-[347px]:space-x-0 space-x-4">
                         {/* <a href="mailto:vivekchaitanya1324@gmail.com" className="hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors-transform focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">Send email</a> */}
