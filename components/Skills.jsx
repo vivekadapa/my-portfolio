@@ -7,7 +7,8 @@ const Skills = () => {
         "C",
         "Java",
         "JavaScript",
-        "TypeScipt",
+        "TypeScript",
+        "Python",
         "HTML",
         "CSS"
     ]
@@ -28,6 +29,7 @@ const Skills = () => {
 
     const tools = [
         "Git",
+        "Aws",
         "Docker",
         "Linux",
         // "Postman",
