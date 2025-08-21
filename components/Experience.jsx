@@ -13,10 +13,10 @@ const Experience = () => {
                     </p>
                     {/* <p className="dark:text-zinc-300 font-semibold">Next • Node • AWS • Material UI</p> */}
                     <div className="flex  flex-wrap gap-4 dark:text-[#d1d5db] text-gray-700 italic">
+                        <span className="dark:border-[1px] bg-gray-50 dark:bg-transparent rounded-md px-1 dark:border-zinc-700">Typescript</span>
                         <span className="dark:border-[1px] bg-gray-50 dark:bg-transparent rounded-md px-1 dark:border-zinc-700">Nextjs</span>
                         <span className="dark:border-[1px] bg-gray-50 dark:bg-transparent rounded-md px-1 dark:border-zinc-700">Nodejs</span>
                         <span className="dark:border-[1px] bg-gray-50 dark:bg-transparent rounded-md px-1 dark:border-zinc-700">AWS</span>
-                        <span className="dark:border-[1px] bg-gray-50 dark:bg-transparent rounded-md px-1 dark:border-zinc-700">Material UI</span>
                     </div>
                 </div>
             </div>
