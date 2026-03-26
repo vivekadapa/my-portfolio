@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Vivek Adapa",
-  description: "vivek's developer portfolio",
+  title: "Vivek Adapa · Full-Stack Engineer",
+  description: "Portfolio of Vivek Adapa — Full-Stack Engineer at Fresh Prints. B.Tech CS from IIIT Sri City. React, Node.js, TypeScript.",
 };
 
 export default function RootLayout({ children }) {

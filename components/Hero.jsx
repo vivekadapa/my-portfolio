@@ -2,46 +2,46 @@
 import Projects from "./Projects";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import Link from "next/link";
-import { ChevronDown } from "lucide-react";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Image from "next/image";
 
-
 const Hero = () => {
     return (
-        <div className="flex flex-col mx-auto  max-[800px]:px-4 max-[760px]:px-8 space-y-12 mt-24 max-w-[750px]">
-            <div id="home" className="flex max-[760px]:flex-col-reverse max-[760px]:gap-4  w-full  justify-between">
+        <div className="flex flex-col mx-auto max-[800px]:px-4 max-[760px]:px-8 space-y-16 mt-20 max-w-[720px]">
+            <section id="home" className="flex max-[760px]:flex-col-reverse max-[760px]:gap-6 gap-4 w-full justify-between items-start">
                 <div className="flex flex-col space-y-4">
-                    <h1 className="font-bold text-4xl">Vivek Chaitanya Adapa</h1>
-                    <h3 className="px-4 py-2 rounded-md text-left dark:bg-[#3f3f46] bg-[#f3f4f6] w-fit font-semibold">Software Developer</h3>
-                    <p className="dark:text-[#71717a] font-medium">Final year CS <a href="https://www.iiits.ac.in/" className="underline text-teal-300" target="_blank">@IIITS</a>, Full Stack Engineer Intern <a href="https://www.freshprints.com/" className="underline text-[#396ce8]" target="_blank">@Fresh Prints</a>.</p>
-                    <div
-                        className="flex max-[347px]:flex-col max-[347px]:space-y-4 max-[347px]:space-x-0 space-x-4">
-                        {/* <a href="mailto:vivekchaitanya1324@gmail.com" className="hover:-translate-y-1 hover:scale-105 duration-300 ease-in-out inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors-transform focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">Send email</a> */}
-                        <a href="/resume.pdf" className="hover:-translate-y-1 hover:scale-105 transition-all duration-300 ease-in-out text-center px-8 pt-[0.7rem] pb-2 inset-0 bg-gradient-to-r text-gray-200 from-indigo-500 to-purple-500 rounded-lg" target="_blank">View Resume</a>
+                    <h1 className="font-bold text-3xl sm:text-4xl tracking-tight">Vivek Adapa</h1>
+                    <p className="text-lg text-zinc-600 dark:text-zinc-400 font-medium">
+                        Full-Stack Engineer at{" "}
+                        <a href="https://www.freshprints.com/" className="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-zinc-100" target="_blank" rel="noopener noreferrer">Fresh Prints</a>.
+                        B.Tech in Computer Science from{" "}
+                        <a href="https://www.iiits.ac.in/" className="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-zinc-100" target="_blank" rel="noopener noreferrer">IIIT Sri City</a> (2025).
+                    </p>
+                    <p className="text-zinc-500 dark:text-zinc-500 text-sm">Warangal, Telangana · vivekchaitanya1324@gmail.com · +91 7680808622</p>
+                    <div className="flex flex-wrap gap-3 pt-1">
+                        <a href="/resume.pdf" className="inline-flex items-center rounded-lg bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 px-5 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <a href="mailto:vivekchaitanya1324@gmail.com" className="inline-flex items-center rounded-lg border border-zinc-300 dark:border-zinc-600 px-5 py-2.5 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Email</a>
                     </div>
                 </div>
-                <Image width={10} height={10} src="/logo.jpg" className="w-24 h-24 rounded-md" alt="logo" unoptimized />
-            </div>
-            <div className="">
-                <h1 className="text-4xl font-bold">Internship</h1>
+                <Image width={96} height={96} src="/logo.jpg" className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover shrink-0" alt="Vivek Adapa" unoptimized />
+            </section>
+            <section id="experience" className="scroll-mt-24">
+                <h2 className="text-2xl font-semibold mb-6">Experience</h2>
                 <Experience />
-            </div>
-            <div id="projects" className="">
-                <h1 className="text-4xl font-bold">Projects</h1>
+            </section>
+            <section id="projects" className="scroll-mt-24">
+                <h2 className="text-2xl font-semibold mb-6">Projects</h2>
                 <Projects />
-                <Link href="/projects" className="mx-auto flex items-center justify-center gap-2 text-center">See More <ChevronDown /></Link>
-            </div>
-            <div id="skills" className="">
-                <h1 className="text-4xl font-bold">Skills</h1>
+            </section>
+            <section id="skills" className="scroll-mt-24">
+                <h2 className="text-2xl font-semibold mb-6">Skills</h2>
                 <Skills />
-            </div>
-            <div id="contact">
+            </section>
+            <section id="contact" className="scroll-mt-24">
                 <Contact />
-            </div>
-            <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
+            </section>
+            <hr className="w-full border-zinc-200 dark:border-zinc-800 my-8" />
             <Footer />
         </div>
     );

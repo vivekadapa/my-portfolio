@@ -1,75 +1,43 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import { IconBrandWhatsapp } from '@tabler/icons-react'
+import React from "react";
+import { Mail, Phone, MapPin, Linkedin, Github, Code } from "lucide-react";
+
+const links = [
+  { href: "mailto:vivekchaitanya1324@gmail.com", label: "vivekchaitanya1324@gmail.com", icon: Mail },
+  { href: "tel:+917680808622", label: "+91 7680808622", icon: Phone },
+  { href: "https://www.linkedin.com/in/vivekadapa", label: "LinkedIn", icon: Linkedin },
+  { href: "https://github.com/vivekadapa", label: "GitHub", icon: Github },
+  { href: "https://leetcode.com/u/Vivek_Chaitanya/", label: "LeetCode", icon: Code },
+];
 
 const Contact = () => {
+  return (
+    <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 p-6">
+      <h2 className="text-2xl font-semibold mb-2">Get in touch</h2>
+      <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6">
+        Open to roles and collaborations. Reach out via email, phone, or LinkedIn.
+      </p>
+      <div className="flex flex-wrap gap-4">
+        {links.map(({ href, label, icon: Icon }) => (
+          <a
+            key={label}
+            href={href}
+            target={href.startsWith("http") ? "_blank" : undefined}
+            rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+            className="inline-flex items-center gap-2 rounded-lg border border-zinc-300 dark:border-zinc-600 px-4 py-2.5 text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          >
+            <Icon className="w-4 h-4" />
+            {label}
+          </a>
+        ))}
+      </div>
+      <p className="mt-4 text-sm text-zinc-500 dark:text-zinc-500">
+        <MapPin className="inline w-4 h-4 mr-1 -mt-0.5" />
+        Warangal, Telangana, India
+      </p>
+    </div>
+  );
+};
 
-    const [email, setEmail] = useState('');
-    const [error, setError] = useState('');
-    const [loading, setLoading] = useState(false);
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-        setError(''); // Reset error
-    }
-
-    const validateEmail = (email) => {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
-    }
-
-    const handleSubmit = async () => {
-        if (!validateEmail(email)) {
-            setError('Please enter a valid email address.');
-            return;
-        }
-
-        setLoading(true);
-
-        try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ email }),
-            });
-
-            const data = await response.json();
-            if (data.success) {
-                console.log("Email Sent Successfully")
-            }
-        } catch (error) {
-            alert('An error occurred while sending the email.');
-        } finally {
-            setLoading(false);
-        }
-    }
-    return (
-        <div className="bg-blue-50 rounded-lg flex flex-col gap-2 dark:bg-blue-800 dark:bg-opacity-30 p-6">
-            <div className="flex flex-col gap-3 my-2">
-                <h1 className="text-2xl text-gray-900 dark:text-gray-100 font-bold">Want to hire me for a job?</h1>
-                <p className="text-xl">Drop a message here</p>
-                <a href="https://wa.me/917680808622/?text=Hello%20%2C%20I%20have%20seen%20your%20portfolio%2C%20would%20like%20to%20talk%20with%20you" className="bg-[#4ade80] w-fit flex gap-2 font-semibold rounded-lg px-4 py-2"> <IconBrandWhatsapp />Whatsapp</a>
-            </div>
-            <hr />
-            <div className="flex flex-col mt-4 gap-4">
-                <label className="text-xl font-semibold" htmlFor="">Drop Your mail here, I will reach out to you</label>
-                <div className="flex relative dark:text-gray-100 dark:bg-gray-800 text-gray-900">
-                    <input type="text" value={email}
-                        onChange={handleEmailChange}
-                        className="rounded-lg flex-grow px-4 py-2"
-                        placeholder="vivekchaitana1324@gmail.com" />
-                    <button onClick={handleSubmit} disabled={loading}
-                        className="font-semibold absolute rounded-r-lg bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100  right-0 px-6 py-2">
-                        {loading ? 'Sending...' : 'Send'}
-                    </button>
-                </div>
-                {error && <p className="text-red-500">{error}</p>}
-            </div>
-        </div>
-    )
-}
-
-export default Contact
+export default Contact;

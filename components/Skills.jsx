@@ -1,73 +1,30 @@
-import React from 'react'
-import Tech from './Tech'
+import React from "react";
+import Tech from "./Tech";
+
+const skills = {
+  "Programming": ["C", "Java", "JavaScript", "TypeScript", "Python", "SQL"],
+  "Libraries & frameworks": ["React", "Redux", "Next.js", "Angular", "Tailwind", "Node.js", "Socket.io", "Bull MQ"],
+  "Tools & platforms": ["Git", "Docker", "Linux", "AWS", "Postman", "Jira"],
+  "Databases": ["MongoDB", "PostgreSQL", "Redis"],
+};
 
 const Skills = () => {
-
-    const languages = [
-        "C",
-        "Java",
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "HTML",
-        "CSS"
-    ]
-
-    const libraries = [
-        "React",
-        "Nextjs",
-        "Redux Toolkit",
-        "Tailwind",
-        "Expressjs"
-    ]
-    const databases = [
-        "Mongodb",
-        "Postgresql",
-        "MySql",
-        "Redis"
-    ]
-
-    const tools = [
-        "Git",
-        "Aws",
-        "Docker",
-        "Linux",
-        // "Postman",
-        "Jira"
-    ]
-
-    return (
-        <div className="mt-4 text-xl italic flex flex-col gap-4">
-            <div className="flex flex-wrap gap-4">
-                {
-                    languages.map((s, index) => {
-                        return <Tech title={s} key={index} />
-                    })
-                }
-            </div>
-            <div className="flex flex-wrap gap-4">
-                {
-                    libraries.map((s, index) => {
-                        return <Tech title={s} key={index} />
-                    })
-                }
-            </div>
-            <div className="flex flex-wrap gap-4">
-                {
-                    databases.map((s, index) => {
-                        return <Tech title={s} key={index} />
-                    })
-                }
-            </div>
-            <div className="flex flex-wrap gap-4">
-                {
-                    tools.map((s, index) => {
-                        return <Tech title={s} key={index} />
-                    })
-                }
-            </div>
+  return (
+    <div className="space-y-6">
+      {Object.entries(skills).map(([group, items]) => (
+        <div key={group}>
+          <h3 className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-2 capitalize">
+            {group}
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {items.map((s, index) => (
+              <Tech key={index} title={s} />
+            ))}
+          </div>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-export default Skills
+export default Skills;
